@@ -4,7 +4,7 @@ import io.ysalih.mulberryCS.model.MessageJson;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3002")
 
 @RestController
 @RequestMapping("/chat")

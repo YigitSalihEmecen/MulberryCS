@@ -13,21 +13,23 @@ public class Realestate {
     private String name;
     private String address;
     private String city;
-    private Double sqm;
-    private Double price;
+    private Integer sqm;
+    private Integer price;
     private String type;
     private Integer yearBuilt;
+    private String status;
 
     public Realestate() {
     }
 
-    public Realestate(String name, Double price, String type, Double sqm, String city, String status, Integer yearBuilt) {
+    public Realestate(String name, Integer price, String type, Integer sqm, String city, String status, Integer yearBuilt) {
         this.name = name;
         this.price = price;
         this.type = type;
         this.sqm = sqm;
         this.city = city;
         this.yearBuilt = yearBuilt;
+        this.status = status;
     }
 
     public Long getId() {
@@ -62,19 +64,19 @@ public class Realestate {
         this.city = city;
     }
 
-    public Double getSqm() {
+    public Integer getSqm() {
         return sqm;
     }
 
-    public void setSqm(Double sqm) {
+    public void setSqm(Integer sqm) {
         this.sqm = sqm;
     }
 
-    public Double getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
@@ -92,6 +94,14 @@ public class Realestate {
 
     public void setYearBuilt(Integer yearBuilt) {
         this.yearBuilt = yearBuilt;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override

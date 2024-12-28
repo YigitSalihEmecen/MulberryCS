@@ -30,11 +30,11 @@ public class MulberryCsApplication {
             for (int i = 1; i <= 100; i++) {
                 realEstates.add(new Realestate(
                         "" + i,
-                        50000.0 + (i * 1000),
-                        (i % 4 == 0 ? "Villa" : i % 4 == 1 ? "Land" : i % 4 == 2 ? "Office" : "Apartment"),
-                        50.0 + (i * 10),
+                        50000 + (i * 1000),
+                        (i % 4 == 0 ? "villa" : i % 4 == 1 ? "land" : i % 4 == 2 ? "office" : "flat"),
+                        50 + (i * 10),
                         (i % 8 == 0 ? "Atasehir" : i % 8 == 1 ? "Silivri" : i % 8 == 2 ? "Basaksehir" : i % 8 == 3 ? "Kartal" : i % 8 == 4 ? "Tuzla" : i % 8 == 5 ? "Besiktas" : i % 8 == 6 ? "Sariyer" : "Maslak"),
-                        i % 2 == 0 ? "For Sale" : "For Rent",
+                        i % 2 == 0 ? "for sale" : "for rent",
                         2000 + (i % 24)
                 ));
             }
